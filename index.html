@@ -4,12 +4,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ann Oyemade Portfolio</title>
+
+  <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 
-  <header>
-    <nav>
-      <ul>
+  <header class="header">
+    <nav class="navbar">
+      <ul class="nav-links">
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#work">Work</a></li>
@@ -21,19 +24,23 @@
 
   <main>
 
-    <section id="home">
+    <section id="home" class="hero-section">
       <h1>Hi, I'm Ann Oyemade</h1>
       <p>Aspiring AI developer based in Nigeria, building skills one project at a time.</p>
     </section>
 
-    <section id="about">
+    <section id="about" class="section">
       <h2>About</h2>
-      <img src="profile.JPG" alt="Photo of Ann Oyemade" width="150">
+
+      <img class="profile-image" src="profile.JPG" alt="Photo of Ann Oyemade">
+
       <p>I'm a professional customer care specialist moving into tech. I have experience in client onboarding, banking customer service, and sales. Those roles taught me to listen, solve problems, and explain things clearly.</p>
+
       <p>Right now I'm learning to code and building projects to show what I can do.</p>
 
       <h3>What I'm learning</h3>
-      <ul>
+
+      <ul class="skills-list">
         <li>Python</li>
         <li>RAG (Retrieval-Augmented Generation)</li>
         <li>CI/CD pipelines</li>
@@ -43,26 +50,27 @@
       </ul>
     </section>
 
-    <section id="work">
+    <section id="work" class="section">
       <h2>Work</h2>
 
-      <article>
+      <article class="project-card">
         <h3>Portfolio Page</h3>
-        <p>This site, built with semantic HTML, an audio clip, a table, and a contact form.</p>
+        <p>This site is built with semantic HTML, an audio clip, a table, and a contact form.</p>
         <a href="https://github.com/oyemadeope">View on GitHub</a>
       </article>
 
-      <article>
+      <article class="project-card">
         <h3>More projects coming soon</h3>
         <p>I'm adding new projects as I learn Python, frontend, and backend development.</p>
         <a href="https://github.com/oyemadeope">See my GitHub</a>
       </article>
     </section>
 
-    <section id="resume">
+    <section id="resume" class="section">
       <h2>Resume</h2>
 
-      <table border="1">
+      <!-- Corrected: no *border*="1" -->
+      <table class="resume-table">
         <tr>
           <th>Role</th>
           <th>What I did</th>
@@ -82,7 +90,8 @@
       </table>
 
       <h3>Skills</h3>
-      <ul>
+
+      <ul class="skills-list">
         <li>Clear communication</li>
         <li>Problem solving</li>
         <li>Customer service</li>
@@ -90,16 +99,23 @@
       </ul>
 
       <h3>Listen to my introduction</h3>
+
       <audio controls>
         <source src="audio.m4a" type="audio/mp4">
         Your browser does not support audio.
       </audio>
     </section>
 
-    <section id="contact">
+    <section id="contact" class="section">
       <h2>Contact</h2>
-      <p>Based in Nigeria. Email me at <a href="mailto:oyemadeope@gmail.com">oyemadeope@gmail.com</a> or use the form below.</p>
-      <form action="#" method="post">
+
+      <p>
+        Based in Nigeria. Email me at
+        <a href="mailto:oyemadeope@gmail.com">oyemadeope@gmail.com</a>
+        or use the form below.
+      </p>
+
+      <form class="contact-form" action="#" method="post">
         <label for="name">Name</label>
         <input type="text" id="name" name="name" required>
 
@@ -115,9 +131,9 @@
 
   </main>
 
-  <footer>
+  <footer class="footer">
     <p>&copy; 2026 Ann Oyemade</p>
-    <a href="mailto:oyemadeope@gmail.com">oyemadeope@gmail.com</a>
+    <a href="mailto:oyemadeope@gmail.com">Email</a>
     <a href="https://github.com/oyemadeope">GitHub</a>
     <a href="#home">Back to top</a>
   </footer>
